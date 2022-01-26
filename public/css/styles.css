@@ -96,6 +96,13 @@ main{
 .descuento,.descripciones{
     font-size: 16px;
 }
+
+.descripcion-producto span i{
+    color: var(--verde);
+    border:1px solid var(--verde);
+    border-radius: 70%;
+    padding: 5px 15px 15px 5px;
+}
 /******************* PIE DE PAGINA (FOOTER)***************/
 
 footer{
@@ -130,3 +137,102 @@ footer p{
     color: var(--gris-oscuro);
 } */
 
+@media (min-width:361px){
+    /********HEADER*******/
+    
+    .burger-menu{
+        display: block;
+    }
+
+    /******** MAIN********/
+    
+    .descripciones{
+        display: none;
+    }
+    .visita-producto,
+    .ofertas-producto{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+    
+}
+
+@media (min-width:769px){
+
+    /****** HEADER*******/
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .logo,
+    .mensaje{
+        width: 36%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .busqueda{
+        width: 26%;
+        height: 30px;
+    }
+    .busqueda input{
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+    .busqueda button i{
+        color: var(--gris-oscuro);
+        font-size: 1rem;
+    }
+    .mensaje{
+        margin-top: 0;
+        text-align: center;
+    }
+    .mensaje p{
+        font-size: .8rem;
+    }
+     
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 35%;
+        
+    }
+    .menu ul li{
+        font-size: .8rem;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    /********* MAIN ***********/
+    .visita,
+    .ofertas{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .titulo{
+        width: 100%;
+        text-align: left;
+    }
+    .visita-producto,
+    .ofertas-producto{
+        
+        width: 48%;
+ 
+
+    }
+}
