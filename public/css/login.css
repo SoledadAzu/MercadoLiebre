@@ -1,0 +1,39 @@
+@import url(/css/styles.css);
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-seccion{
+    width: 55%;
+    margin-top: 20px;
+}
+.login-seccion form{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+.login-seccion form input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.login-seccion form label{
+    margin-bottom: 5px;
+}
+.login-seccion .nombre{
+    margin-top: 10px;
+}
+.login-seccion .btn{
+    margin-top: 20px;
+    background-color: var(--celeste);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+@media (min-width:768px){
+    .login-seccion{
+        width: 45%;
+        margin-top: 20px;
+    }
+}

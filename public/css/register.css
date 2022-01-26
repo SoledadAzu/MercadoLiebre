@@ -1,0 +1,76 @@
+@import url(/css/styles.css);
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registro .registro-container{
+    width: 70%;
+}
+.registro-container form{
+    display: flex;
+    flex-direction: column;
+}
+.registro-container form label,
+.registro-container form input {
+    display: inline-block;
+}
+.registro-container form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.registro-container .nombre{
+    margin-top: 20px;
+}
+.registro-container .fecha{
+    margin-bottom: 20px;
+}
+.registro-container .perfil{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.registro-container .interes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.registro-container .botones{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.registro-container .botones a{
+    width: 45%;
+}
+.registro-container .botones .celeste{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--celeste);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.registro-container .botones .btnceleste{
+    background-color: var(--celeste);
+    color: white;
+    border: none;
+}
+.registro-container .botones .btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.amarillo {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+@media (min-width:768px){
+    .registro .registro-container{
+        width: 45%;
+    }
+}
