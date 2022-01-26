@@ -36,14 +36,29 @@ header{
     background-color: var(--amarillo);
     width: 100%;
 }
+contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
 .logo{
     width: 50%;
-    margin-left: 15px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    
+}
+
+.logo img{
+    width: 95%;
 }
 .busqueda{
-    margin-left: 15px;
+    width: 50%;
+    height: 45px;
+    position: relative;
 }
 .mensaje{
     margin-top: 20px;
@@ -77,11 +92,18 @@ main{
     width: 100%;
     padding-bottom: 20px;
 }
-.visita article,
-.ofertas article{
-    width: 80%;
-    margin: 20px auto;
+
+.visita,
+.ofertas{
+    width: 90%;
+    margin: auto;
 }
+
+/* .visita-article,
+.ofertas-article{
+    width: 86%;
+    margin: 20px auto;
+} */
 .titulo{
     text-align: center;
     
@@ -89,20 +111,53 @@ main{
 
 .descripcion-producto h4{
     font-size: 18px;
+    width:30%;
 }
 .descuento{
-    color: var(--verde)
+    color: var(--verde);
+    width:70%;
 }
 .descuento,.descripciones{
     font-size: 16px;
 }
+.visita-producto,
+.ofertas-producto{
+    background-color: white;
+    margin-top: 10px;
+    /***** position ****/
+    position: relative;
+}
+.descripcion-producto{
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+}
+
+.descripcion-precios{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
 
 .descripcion-producto span i{
+    bottom: 76px;
+    /*top:-15px;*/
     color: var(--verde);
-    border:1px solid var(--verde);
+    /* border:1px solid var(--verde);
     border-radius: 70%;
-    padding: 5px 15px 15px 5px;
+    padding: 5px 15px 15px 5px; */ 
+    display:block;  
+    font-size:16px;   
+    padding:5px;   
+    width:30px;    
+    height:30px;   
+    border:1px solid #39b54a;  
+    background-color: #fff;    
+    border-radius:50%;  
+    position:absolute;   
+    right:20px;
 }
+
+
 /******************* PIE DE PAGINA (FOOTER)***************/
 
 footer{
@@ -146,9 +201,7 @@ footer p{
 
     /******** MAIN********/
     
-    .descripciones{
-        display: none;
-    }
+    
     .visita-producto,
     .ofertas-producto{
         box-shadow: 0px 0px 10px rgb(100,100,100);
@@ -228,11 +281,23 @@ footer p{
         width: 100%;
         text-align: left;
     }
+    /* .visita-article,
+    .ofertas-article{
+    width: 48%;
+    margin: 20px auto;
+} */
+.visita-producto,
+    .ofertas-producto{
+         width: 48%;
+    }
+
+}
+@media (min-width:1024px){
+    /*********** MAIN *****************/
     .visita-producto,
     .ofertas-producto{
         
-        width: 48%;
- 
-
+        width: 24%;
     }
+
 }
